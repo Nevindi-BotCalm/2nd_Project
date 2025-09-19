@@ -4,10 +4,16 @@ import group2 from '../../../assets/Group2.png';
 
 export const HeroSection = () => {
   return (
-    <section
-      id=""
-      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black pt-16 text-white sm:pt-20"
-    >
+    //     export const NAV_ITEMS = [
+    //   { label: 'Home', href: '/' },
+    //   { label: 'Ecosystem', href: '/ecosystem' },
+    //   { label: 'How To Buy', href: '/how-to-buy' },
+    //   { label: 'Why Choose', href: '/why-choose' },
+    //   { label: 'Tokenomics', href: '/tokenomics' },
+    //   { label: 'Resources', href: '/resources' },
+    // ];
+
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black pt-16 text-white sm:pt-20">
       <div className="relative z-10 mx-auto max-w-7xl text-center">
         {/* Title */}
         <div className="relative">

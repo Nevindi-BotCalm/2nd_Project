@@ -1,5 +1,4 @@
 // UI Components
-export { Button } from './ui/button';
 export { Logo } from './ui/Logo';
 
 // Navbar Components

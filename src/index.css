@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
 /* Correct font family class */
 .bebas {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue', sans-serif !important;
   font-weight: 400; /* regular */
+}
+
+.Nunito{
+  font-family: 'Nunito',sans-serif;
+  font-weight: 400;/* regular */
+}
+
+/* Apply Nunito font to all text except headings and bebas class */
+body *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(.bebas):not(.bebas *) {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
 }
 
 /* Custom scrollbar */
