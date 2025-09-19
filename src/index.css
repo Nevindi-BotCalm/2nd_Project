@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* Correct font family class */
+.bebas {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400; /* regular */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00ff40;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22ff00;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #42f80a;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Blur effect when scrolling */
+.content {
+  transition: filter 0.5s;
+}
+
+html:not([data-scroll='0']) .content {
+  filter: blur(15px);
+}

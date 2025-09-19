@@ -1,0 +1,108 @@
+import { useState } from 'react';
+import eco2 from '../../../assets/eco2.png';
+import ecoback from '../../../assets/ecoback.png';
+import Arrow from '../../../assets/Arrow.png';
+
+function EcoSection() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      question: "Staff Picks With Erin This Week's Top Picks",
+      answer:
+        'MCORE follows a transparent, gamer-first token economy. Every allocation supports community, ecosystem, and growth. The Core Sentinel, a robotic panda forged from circuits and steel, is the guardian of the MechaCore ecosystem. Equipped with glowing energy leaves and armored plating, it represents strength, innovation, and community trust.',
+    },
+    {
+      question: 'Compelling Games Is 20 Years of Age!',
+      answer:
+        'MCORE follows a transparent, gamer-first token economy. Every allocation supports community, ecosystem, and growth. The Core Sentinel, a robotic panda forged from circuits and steel, is the guardian of the MechaCore ecosystem. Equipped with glowing energy leaves and armored plating, it represents strength, innovation, and community trust.',
+    },
+    {
+      question: 'Irresistible Games Merchandise Is Here',
+      answer:
+        'MCORE follows a transparent, gamer-first token economy. Every allocation supports community, ecosystem, and growth. The Core Sentinel, a robotic panda forged from circuits and steel, is the guardian of the MechaCore ecosystem. Equipped with glowing energy leaves and armored plating, it represents strength, innovation, and community trust.',
+    },
+  ];
+
+  return (
+    <div className="bg-black text-white px-4 py-12">
+      <div className="mx-auto flex max-w-[1527.75px] flex-col md:flex-row md:items-center md:justify-between lg:gap-[124px] lg:px-16">
+        
+        {/* Left Section (Text & Q&A) */}
+        <div className="flex w-full max-w-[600px] flex-col space-y-8">
+          <h1 className="font-['Bebas_Neue'] text-[70px] leading-[100%] font-normal tracking-[-1px] capitalize sm:text-[64px] md:text-[80px]  lg:text-[103px] ">
+            Powering the Future of Gaming
+          </h1>
+
+          {/* Accordion Section */}
+          <div className="space-y-3">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="rounded border border-green-500 bg-black/50"
+              >
+                <button
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
+                  className={`flex w-full items-center gap-3 px-4 py-3 text-left transition ${
+                    openIndex === index
+                      ? 'bg-green-500/20 text-white'
+                      : 'text-white hover:bg-green-500/10'
+                  }`}
+                >
+                  <img
+                    src={Arrow}
+                    alt="arrow"
+                    className="h-4 w-4 object-contain"
+                  />
+                  <span className="text-base font-medium">{faq.question}</span>
+                </button>
+
+                {openIndex === index && (
+                  <div className="px-4 pb-4">
+                    <p className="text-base text-gray-300">{faq.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Buttons */}
+          <div className="mt-8 flex justify-center gap-1">
+            <div className="bg-gradient-to-b from-[#00FF26] to-[#EAFF06] p-[1px] [clip-path:polygon(0_0,100%_0,calc(100%-8px)_100%,0_100%)] sm:p-[2px]">
+              <button className="flex items-center justify-center bg-gradient-to-r from-[#00FF26] to-[#EAFF06] px-10 py-2 text-sm font-semibold text-black [clip-path:polygon(0_0,100%_0,calc(100%-8px)_100%,0_100%)] sm:px-4 md:px-5 lg:px-6 xl:px-8 xl:py-3 xl:text-base">
+                Buy Token
+              </button>
+            </div>
+
+            <div className="bg-gradient-to-b from-[#00FF26] to-[#EAFF06] p-[1px] [clip-path:polygon(8px_0,100%_0,100%_100%,0_100%)] sm:p-[2px]">
+              <button className="flex items-center justify-center bg-black px-10 py-2 text-sm font-semibold text-white [clip-path:polygon(8px_0,100%_0,100%_100%,0_100%)] sm:px-4 md:px-5 lg:px-6 xl:px-8 xl:py-3 xl:text-base">
+                <span className="hidden sm:inline">Join Now</span>
+                <span className="sm:hidden">Join Now </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Section (Image) */}
+        <div className="relative mx-auto mt-12 w-full max-w-[600px] md:mt-0">
+          <div className="relative h-[400px] w-full sm:h-[480px] md:h-[512px]">
+            <img
+              src={ecoback}
+              alt="eco background"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <img
+              src={eco2}
+              alt="eco character"
+              className="relative z-10 h-full w-full object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default EcoSection;
