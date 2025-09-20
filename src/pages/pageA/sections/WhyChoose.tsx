@@ -1,6 +1,5 @@
 import why from '../../../assets/whywhy.png';
 
-
 function WhychooseSection() {
   return (
     <div
@@ -21,7 +20,7 @@ function WhychooseSection() {
 
         {/* Left Section (Text & Q&A) */}
         <div className="flex w-full max-w-[600px] flex-col space-y-8">
-          <h1 className="font-['Bebas_Neue'] text-[70px] leading-[100%] font-normal tracking-[-1px] capitalize sm:text-[64px] md:text-[80px] lg:text-[103px]">
+          <h1 className="mt-10 text-center font-['Bebas_Neue'] text-[50px] leading-[100%] font-normal tracking-[-1px] capitalize sm:text-[64px] md:text-[80px] lg:text-[103px]">
             Why Hold MCORE?
           </h1>
 
@@ -33,7 +32,7 @@ function WhychooseSection() {
           </p>
 
           {/* Buttons */}
-          <div className="mt-8 flex justify-center gap-1 sm:justify-start">
+          <div className="mt-8 flex justify-center gap-1 font-semibold">
             <div className="bg-gradient-to-b from-[#00FF26] to-[#EAFF06] p-[1px] [clip-path:polygon(0_0,100%_0,calc(100%-8px)_100%,0_100%)] sm:p-[2px]">
               <button className="flex items-center justify-center bg-gradient-to-r from-[#00FF26] to-[#EAFF06] px-10 py-2 text-sm font-semibold text-black [clip-path:polygon(0_0,100%_0,calc(100%-8px)_100%,0_100%)] sm:px-4 md:px-5 lg:px-6 xl:px-8 xl:py-3 xl:text-base">
                 Buy Token
@@ -48,7 +47,7 @@ function WhychooseSection() {
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </div>
   );
 }

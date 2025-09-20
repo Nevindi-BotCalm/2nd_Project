@@ -4,23 +4,27 @@ import StripeIcon from './components/StripeIcon';
 import EcoSection from './pages/pageA/sections/EcoSection';
 import HowtobuySection from './pages/pageA/sections/HowtobuySection';
 import WhyChoose from './pages/pageA/sections/WhyChoose';
-
+import ResourcesSection from './pages/pageA/sections/ResourcesSection';
+import PowerYourCoreSection from './pages/pageA/sections/PowerYourCoreSection';
+import Footer from './pages/pageA/sections/Footer';
 
 function App() {
   return (
     <div className="min-h-screen bg-black">
       <Navbar />
       <HeroSection />
-      
+
       <StripeIcon />
       <EcoSection />
       <HowtobuySection />
       <WhyChoose />
 
-      <div className='mt-[186px]'>
- <StripeIcon />
+      <div className="mt-[186px]">
+        <StripeIcon />
       </div>
-     
+      <PowerYourCoreSection />
+      <ResourcesSection />
+      <Footer />
     </div>
   );
 }
