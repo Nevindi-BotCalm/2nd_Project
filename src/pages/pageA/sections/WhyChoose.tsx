@@ -20,7 +20,7 @@ function WhychooseSection() {
 
         {/* Left Section (Text & Q&A) */}
         <div className="flex w-full max-w-[600px] flex-col space-y-8">
-          <h1 className="mt-10 text-center font-['Bebas_Neue'] text-[50px] leading-[100%] font-normal tracking-[-1px] capitalize sm:text-[64px] md:text-[80px] lg:text-[103px]">
+          <h1 className="mt-10 text-center font-['Bebas_Neue'] text-[50px] tracking-[-4%] leading-96% font-normal  capitalize sm:text-[64px] md:text-[80px] lg:text-[103px]">
             Why Hold MCORE?
           </h1>
 

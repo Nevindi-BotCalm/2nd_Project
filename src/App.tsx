@@ -7,6 +7,7 @@ import WhyChoose from './pages/pageA/sections/WhyChoose';
 import ResourcesSection from './pages/pageA/sections/ResourcesSection';
 import PowerYourCoreSection from './pages/pageA/sections/PowerYourCoreSection';
 import Footer from './pages/pageA/sections/Footer';
+import JoinCommunitySection from './pages/pageA/sections/JoinCommunitySection';
 
 function App() {
   return (
@@ -14,15 +15,24 @@ function App() {
       <Navbar />
       <HeroSection />
 
-      <StripeIcon />
+      <div className="mt-[16pxpx]">
+        <StripeIcon />
+      </div>
+
       <EcoSection />
       <HowtobuySection />
       <WhyChoose />
 
-      <div className="mt-[186px]">
+      <div className="mt-[150px]">
         <StripeIcon />
       </div>
+      <JoinCommunitySection />
       <PowerYourCoreSection />
+
+      <div className="mt-[150px]">
+        <StripeIcon />
+      </div>
+
       <ResourcesSection />
       <Footer />
     </div>

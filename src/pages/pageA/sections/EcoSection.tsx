@@ -40,7 +40,7 @@ function EcoSection() {
       <div className="mx-auto flex max-w-[1527.75px] flex-col md:flex-row md:items-center md:justify-between lg:gap-[124px] lg:px-16">
         {/* Left Section (Text & Q&A) */}
         <div className="flex w-full max-w-[600px] flex-col space-y-8">
-          <h1 className="font-['Bebas_Neue'] text-[70px] leading-[100%] font-normal tracking-[-1px] capitalize sm:text-[64px] md:text-[80px] lg:text-[103px]">
+          <h1 className="font-['Bebas_Neue'] text-[70px] leading-[96%] font-normal tracking-[-4%] capitalize sm:text-[64px] md:text-[80px] lg:text-[103px]">
             Powering the Future of Gaming
           </h1>
 

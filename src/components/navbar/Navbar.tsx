@@ -34,8 +34,8 @@ export const Navbar = () => {
         {/* Right-side buttons */}
         <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4 xl:space-x-6">
           {/* Buy Token Button */}
-          <div className="bg-gradient-to-r from-[#00FF26] to-[#EAFF06] p-[1px] [clip-path:polygon(0_0,100%_0,calc(100%-8px)_100%,0_100%)] sm:p-[2px]">
-            <button className="flex items-center justify-center bg-gradient-to-r from-[#00FF26] to-[#EAFF06] px-3 py-2 text-sm font-semibold text-black [clip-path:polygon(0_0,100%_0,calc(100%-8px)_100%,0_100%)] sm:px-4 sm:text-base md:px-5 md:text-base lg:px-6 lg:text-lg xl:px-8 xl:py-3 xl:text-lg 2xl:px-10 2xl:text-xl">
+          <div className="bebas leading-[112px] bg-gradient-to-r from-[#00FF26] to-[#EAFF06] p-[1px] [clip-path:polygon(0_0,100%_0,calc(100%-8px)_100%,0_100%)] sm:p-[2px]">
+            <button className="flex items-center justify-center bg-gradient-to-r from-[#00FF26] to-[#EAFF06] px-3 py-2 text-sm font-bold text-black [clip-path:polygon(0_0,100%_0,calc(100%-8px)_100%,0_100%)] sm:px-4 sm:text-base md:px-5 md:text-base lg:px-6 lg:text-lg xl:px-8 xl:py-3 xl:text-lg 2xl:px-10 2xl:text-xl">
               <span className="hidden sm:inline">Buy Token</span>
               <span className="sm:hidden">Buy Token</span>
             </button>

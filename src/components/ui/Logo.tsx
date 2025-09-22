@@ -1,6 +1,10 @@
-export const Logo = () => {
+interface LogoProps {
+  className?: string;
+}
+
+export const Logo = ({ className }: LogoProps) => {
   return (
-    <div className="bebas font-normal tracking-[11%] leading-[112%] capitalize text-[32px]">
+    <div className={`bebas font-normal tracking-[11%] leading-[112%] capitalize text-[32px] ${className || ''}`}>
       <span className="text-white">MECHA</span>
       <span className="bg-gradient-to-b from-[#00ff00] to-yellow-400 bg-clip-text text-transparent">
         CORE

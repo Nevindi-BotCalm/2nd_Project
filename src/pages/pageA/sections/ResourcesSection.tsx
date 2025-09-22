@@ -10,26 +10,25 @@ function ResourcesSection() {
   const icons = [
     { src: IconMoon, alt: 'Moon Icon', class: 'left-[8%] top-[10%]' },
     { src: IconLeaf, alt: 'Leaf Icon', class: 'right-[15%] top-[12%]' },
-    {
-      src: IconCrystal, alt: 'Crystal Icon',class: 'right-[55%] bottom-[50%]',
-    },
+    { src: IconCrystal, alt: 'Crystal Icon', class: 'right-[55%] bottom-[50%]' },
     { src: IconFire, alt: 'Fire Icon', class: 'left-[18%] bottom-[20%]' },
     { src: IconBolt, alt: 'Bolt Icon', class: 'right-[10%] bottom-[12%]' },
     { src: IconGreen, alt: 'Green Icon', class: 'top-[42%] left-[47%]' },
   ];
 
   return (
-    <section className="relative flex w-full items-center justify-center bg-black px-4 py-8">
-      <div className="relative w-full max-w-[1920px] min-w-[380px] overflow-hidden rounded-xl border-[6px] border-[#00FF26] bg-gradient-to-b from-[#00FF26] to-[#EAFF06] p-[3px]">
-        {/* Background Image */}
+    <section className="relative flex min-h-screen w-full items-center justify-center bg-black px-4 py-8">
+      <div className="relative h-[823px] w-[1920px] overflow-hidden rounded-xl border-[6px] border-[#00FF26] bg-gradient-to-b from-[#00FF26] to-[#EAFF06] p-[3px]">
+        
+        {/* Background */}
         <img
           src={ResourcesImage}
           alt="Mecha Resources"
-          className="h-full w-full rounded-lg object-cover"
+          className="absolute top-[45px] left-[45px] h-[734px] w-[1830px] object-cover"
         />
 
         {/* Heading */}
-        <h2 className="absolute top-1/2 right-4 -translate-y-1/2 font-['Bebas_Neue'] text-[24px] leading-[96%] font-normal tracking-[-0.04em] text-white capitalize sm:text-[36px] md:text-[60px] lg:text-[90px] xl:text-[103px]">
+        <h2 className="bebas absolute top-[362px] left-[1469px] w-[326px] text-center text-[103px] leading-[96%] font-normal tracking-[-0.04em] text-white capitalize">
           Resources
         </h2>
 
@@ -40,7 +39,13 @@ function ResourcesSection() {
               key={i}
               src={src}
               alt={alt}
-              className={`absolute w-[12%] sm:w-[9%] md:w-[7%] lg:w-[6%] ${pos}`}
+              className={`
+                absolute w-[12%] sm:w-[9%] md:w-[7%] lg:w-[6%] ${pos}
+                animate-[float_6s_ease-in-out_infinite]
+              `}
+              style={{
+                animationDelay: `${i * 1.2}s`, // staggered delay for fish-tank effect
+              }}
             />
           ))}
         </div>

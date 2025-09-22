@@ -11,8 +11,8 @@ function Footer() {
   ];
 
   return (
-    <footer className=" bg-black px-8 py-8">
-      <div className="mx-auto max-w-7xl">
+    <footer className="w-[1676px] h-[262px] bg-black px-8 py-8 gap-[50px]">   
+       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-start">
           <div className="flex flex-col gap-6">
             <h2 className="font-['Bebas_Neue'] text-4xl text-white lg:text-5xl">

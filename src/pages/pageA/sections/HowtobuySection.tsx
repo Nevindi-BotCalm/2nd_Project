@@ -49,8 +49,8 @@ function HowtobuySection() {
             </div>
 
             <div className="relative h-[25px]">
-              {' '}
-              {/* parent container height */}
+            
+              
               <div className="absolute bottom-0 left-1/2 flex -translate-x-1/2 justify-center">
                 <button className="bebas flex h-[56.5px] w-[284px] items-center justify-center bg-gradient-to-b from-[#00FF26] to-[#EAFF06] text-lg font-bold tracking-wider text-black opacity-100 transition [clip-path:polygon(0%_0,100%_0,90%_100%,10%_100%)] hover:opacity-90">
                   {img.button}
@@ -68,7 +68,7 @@ function HowtobuySection() {
         ))}
       </div>
 
-      <h1 className="mt-[60px] text-center font-['Bebas_Neue'] text-[103px] text-white">
+      <h1 className="mt-[60px] text-center font-['Bebas_Neue'] text-[103px] text-white tracking-[-4%] leading-96%">
         How to Buy
       </h1>
     </div>
